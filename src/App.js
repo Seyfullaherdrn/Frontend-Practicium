@@ -8,6 +8,7 @@ function App() {
   const [selectedStarship, setSelectedStarship] = useState(null);
   const [searchTerm, setSearchTerm] = useState('');
   const ref = useRef();
+  const [audioPlaying, setAudioPlaying] = useState(true);
 
   useEffect(() => {
     axios.get('https://swapi.dev/api/starships')
@@ -41,16 +42,23 @@ function App() {
     };
   }, [ref]);
 
+  function toggleAudio() {
+    setAudioPlaying(!audioPlaying);
+  }
+
   return (
     <div className="App">
       <ReactAudioPlayer
-        src="https://upload.wikimedia.org/wikipedia/commons/4/4d/Star-spangled_banner.ogg"
+        src="https://soundcloud.com/i-m-sidan/star-wars-theme-song-dl-link-to-description?utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing"
         autoPlay
         loop
+        volume={0.2}
+        muted={!audioPlaying}
       />
       <div className="header">
         <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6c/Star_Wars_Logo.svg/2560px-Star_Wars_Logo.svg.png" alt="Star Wars logo" />
       </div>
+      <div className="audio-toggle" onClick={toggleAudio}></div>
       <div className="search-bar">
         <input type="text" placeholder="Search for a starship" value={searchTerm} onChange={(event) => setSearchTerm(event.target.value)} />
       </div>
