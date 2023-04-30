@@ -1,3 +1,16 @@
+
+#   STAR WARS STARSHİPS 
+
+Özetle, bu projede React kütüphanesi kullanılarak bir Star Wars uzay gemileri uygulaması geliştirilmiştir. Uygulama, Star Wars filmlerinde yer alan uzay gemilerini listeleyerek, kullanıcılara arama ve seçim yapma imkanı sunar. Ayrıca, seçilen uzay gemisinin özelliklerini detaylı olarak gösterir.
+
+Uygulama aynı zamanda, ReactAudioPlayer kütüphanesi kullanılarak Star Wars film müziğini otomatik olarak çalabilir ve ses kontrolü sağlayabilir. CSS ve HTML kullanarak uygulama arayüzü tasarlanmıştır.
+
+Uygulamanın kodu, useEffect, useState ve useRef gibi React kancalarını kullanarak, API isteklerini yönetir ve seçili öğenin belirlenmesini sağlar. Ayrıca, React'ta bir dizi özellik kullanılarak, özellikle arama işlevselliği için harici bağımlılıklar gerektirmeden bir öğe filtreme işlevselliği sağlanır.
+
+Tüm bunların yanı sıra, uygulama geliştirilirken, uygulamanın kullanıcı dostu ve işlevsel olması hedeflenmiştir. Proje, React kullanımına aşina olan geliştiriciler için yararlı bir örnek olabilir.
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
